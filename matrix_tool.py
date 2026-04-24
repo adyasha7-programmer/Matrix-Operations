@@ -1,6 +1,5 @@
 import numpy as np
 
-# Function to input matrix
 def input_matrix(name):
     rows = int(input(f"Enter number of rows for {name}: "))
     cols = int(input(f"Enter number of columns for {name}: "))
@@ -13,12 +12,10 @@ def input_matrix(name):
     
     return np.array(matrix)
 
-# Display matrix nicely
 def display_matrix(matrix, title="Result"):
     print(f"\n{title}:")
     print(matrix)
 
-# Main program
 def main():
     print("===== MATRIX OPERATIONS TOOL =====")
     
@@ -75,6 +72,5 @@ def main():
         except Exception as e:
             print("Error:", e)
 
-# Run program
 if __name__ == "__main__":
     main()
